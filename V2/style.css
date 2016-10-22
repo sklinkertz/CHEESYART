@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #151d20;
+  color: #fff;
+  font-weight: 100;
+  -webkit-transition: background 0.7s;
+  transition: background 0.7s;
+}
+body a,
+body .clickme {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.4;
+  line-height: 50px;
+  font-weight: 100;
+  margin: 0 24px;
+  font-size: 14px;
+  letter-spacing: 6px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+body a:hover,
+body .clickme:hover {
+  opacity: 0.8;
+}
+body .top {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body .top .clickme {
+  cursor: pointer;
+}
+body .top .clickme::-moz-selection {
+  background: none;
+}
+body .top .clickme::selection {
+  background: none;
+}
+body .middle {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+}
+body .middle .whoAmI {
+  font-size: 50px;
+  letter-spacing: 12px;
+  padding: 30px 16px;
+  line-height: 80px;
+}
+body .bottom {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+@media only screen and (max-width: 414px) {
+  body .top {
+    text-align: center;
+  }
+  body .middle .whoAmI {
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 36px;
+  }
+  body a,
+  body .clickme {
+    font-size: 12px;
+    line-height: 72px;
+    letter-spacing: 3px;
+    margin: 0 8px;
+  }
+}
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  body .top {
+    text-align: right;
+  }
+  body .middle .whoAmI {
+    font-size: 28px;
+    letter-spacing: 10px;
+    line-height: 48px;
+  }
+  body a,
+  body .clickme {
+    font-size: 14px;
+    line-height: 72px;
+    letter-spacing: 5px;
+    margin: 0 16px;
+  }
+}

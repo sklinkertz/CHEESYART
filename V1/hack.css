@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=VT323);
+@keyframes blink {
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+.app > * {
+  display: none; }
+
+.app > *:last-child {
+  display: block; }
+
+.app > *:target {
+  display: block;
+  animation: fade 300ms linear 1; }
+
+.app > *:target ~ * {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #151515;
+  color: #eee;
+  font-family: 'Share Tech Mono', monospace;
+  box-sizing: border-box;
+  user-select: none;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0; }
+  body a,
+  body a:visited {
+    padding: 5px;
+    color: #eee;
+    text-decoration: none; }
+  body a:active,
+  body a:focus,
+  body a:hover {
+    background-color: #eee;
+    color: #031e11; }
+  body a {
+    color: #eee;
+    text-decoration: none !important; }
+  body h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase; }
+  body p {
+    margin-bottom: 2rem; }
+  body nav ul {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none; }
+  body nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start; }
+  body .password {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 550px) {
+      body .password {
+        font-size: 25px; } }
+    body .password.hidden {
+      display: none; }
+  body .button {
+    background-color: #111;
+    border: 4px solid #fff;
+    padding: 8px 25px;
+    font-size: 25px;
+    margin-top: 0;
+    letter-spacing: 2px;
+    cursor: pointer; }
+    body .button.start {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    body .button.rerun {
+      position: absolute;
+      bottom: 15px;
+      right: 15px; }
+      body .button.rerun.hidden {
+        display: none; }
+  body .blink {
+    animation: blink 0.8s steps(1, start) infinite alternate; }
+  body .granted {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px; }
+  body .hidden {
+    display: none; }
+
+/*# sourceMappingURL=hack.css.map */
