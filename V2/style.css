@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: #151d20;
@@ -36,10 +37,7 @@ body .top {
 body .top .clickme {
   cursor: pointer;
 }
-body .top .clickme::-moz-selection {
-  background: none;
-}
-body .top .clickme::selection {
+body .top .clickme::-moz-selection, body .top .clickme::selection {
   background: none;
 }
 body .middle {
@@ -57,9 +55,27 @@ body .middle .whoAmI {
 body .bottom {
   text-align: center;
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
+body .bottom .clients {
+  color: yellow;
+}
+body .bottom .clients .list {
+  display: none;
+}
+body .bottom .clients:hover > .list {
+  display: block;
+  position: absolute;
+  bottom: 120px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body .bottom .clients:hover body > .middle {
+  display: none;
+}
+
 @media only screen and (max-width: 414px) {
   body .top {
     text-align: center;
