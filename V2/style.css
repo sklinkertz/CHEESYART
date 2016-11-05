@@ -50,6 +50,10 @@ body .bottom {
   cursor: pointer;
 }
 
+body .bottom .clients, .cheesyart {
+  text-decoration: line-through;
+}
+
 body .bottom .clients:hover + body .middle .whoAmI {
   display: none;
 }
