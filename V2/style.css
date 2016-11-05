@@ -34,6 +34,7 @@ body .top {
 
 body .top .clickme {
   cursor: pointer;
+  user-select: none;
 }
 
 body .top .clickme::-moz-selection, body .top .clickme::selection {
@@ -43,8 +44,10 @@ body .top .clickme::-moz-selection, body .top .clickme::selection {
 body .bottom {
   text-align: center;
   bottom: 0;
-  position: relative;
+  position: absolute;
   width: 100%;
+  user-select: none;
+  cursor: pointer;
 }
 
 body .bottom .clients:hover + body .middle .whoAmI {
