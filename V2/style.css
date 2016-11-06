@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-* {
+
+* { 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -213,40 +216,45 @@ body .middle {
   text-align: center;
 }
 
-body .middle .image-container {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  background: #fff;
-  cursor: pointer;
+.grid {
+      list-style:none;
+      overflow: hidden;
+      padding: 0.5em 0 0 0.5em;
+      max-width: 76em;
+      margin: 0 auto;}
+.grid li {
+  padding: 0 0.5em 0.5em 0;
 }
-.image {
-  width: 200px;
-  height: 200px;
-  z-index: 1;
-  transition: all .5s;
+.grid li > img {
+  display:block;
+  max-width:100%;
+  background: #808080;
+  padding: 2em;
+  text-align: center;
 }
-.image img {
-  max-width: 100%;
-}
-.bottom {
-  position: absolute;
-  bottom: 15px;
-  left: 0px;
-  right: 0;
-}
-.break {
-  display: none;
-}
-@media all and (max-width: 650px) {
-  .image-container {
-    margin: 30px;
-    outline: solid 20px #eee;
+.grid li a {
+  color: #fff;
+}   
+@media all and (min-width: 27em) {
+  .grid li {
+    width: 50%;
+    float: left;
   }
-  .break {
-    display: initial;
+}
+@media all and (min-width: 40em) {
+  .grid li {
+    width: 33.3333333%;
+  }
+  .grid li.wide {
+    width: 66.666666%;
+  }
+}
+@media all and (min-width: 60em) {
+  .grid li {
+    width: 25%;
+  }
+  .grid li.wide {
+    width: 50%;
   }
 }
 
