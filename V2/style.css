@@ -199,10 +199,55 @@ body .bottom .clients:hover + body .middle .whoAmI {
 }
 
 body .middle {
-  position: absolute;
   width: 100%;
-  top: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
   text-align: center;
+}
+
+body .middle .image-container {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  transition: all .5s;
+}
+.image img {
+  max-width: 100%;
+}
+.bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  right: 0;
+}
+.break {
+  display: none;
+}
+@media all and (max-width: 650px) {
+  .image-container {
+    margin: 30px;
+    outline: solid 20px #eee;
+  }
+  .break {
+    display: initial;
+  }
 }
 
 body .middle .whoAmI {
