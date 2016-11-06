@@ -10,8 +10,7 @@
         vimeoBgColor = '#00B3EC';
         count = 0;
         textArray = [
-            'Jo!',
-            'MY NAME IS',
+            'Jo! MY NAME IS', 
             'SIMON "KLINKE" KLINKERTZ',
             'AND I AM A',
             'FILMMAKER AND WEB-DESIGNER'

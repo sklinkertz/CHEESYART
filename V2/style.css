@@ -28,8 +28,14 @@ body .clickme {
 
 body .top .clickme {
   cursor: pointer;
-  user-select: none;
   margin-top: 8px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body .top .clickme::-moz-selection, body .top .clickme::selection {
@@ -201,7 +207,7 @@ body .middle {
   z-index: -2;
   bottom: 0;
   margin: 0;
-  padding: 0;
+  padding: 0 0 50px;
   text-align: center;
   overflow-y: scroll;
   background-color: transparent;
@@ -270,8 +276,9 @@ body .middle {
   top: -200px;
   margin-bottom: 2rem;
   margin-top: 4rem;
+  padding: 0 5px;
   font-size: 2.25rem;
-  font-family: 'Oswald';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   color: white;
   text-align: center;
@@ -286,7 +293,7 @@ body .middle {
   top: 200px;
   padding: 10px;
   margin: 0 auto;
-  font-family: 'Oswald';
+  font-family: 'Montserrat', sans-serif;
   color: white;
   letter-spacing: 3px;
   text-decoration: none;
@@ -312,35 +319,35 @@ body .middle {
 }
 
 .study1 {
-  background-image: url("./images/clients/reell.jpg");
+  background-image: url("./images/clients/reell-case.png");
 }
 
 .study2 {
-  background-image: url("./images/clients/amd.jpg");
+  background-image: url("./images/clients/amd-case.jpg");
 }
 
 .study3 {
-  background-image: url("./images/clients/tudresden.jpg");
+  background-image: url("./images/clients/tud-case.png");
 }
 
 .study4 {
-  background-image: url("./images/clients/tor21.png");
+  background-image: url("./images/clients/tor21-case.png");
 }
 
 .study5 {
-  background-image: url("./images/clients/fdi.jpg");
+  background-image: url("./images/clients/fdi-case.png");
 }
 
 .study6 {
-  background-image: url("./images/clients/evaberten.png");
+  background-image: url("./images/clients/evaberten-case.png");
 }
 
 .study7 {
-  background-image: url("./images/clients/timmfleissgarten.png");
+  background-image: url("./images/clients/timmfl-case.png");
 }
 
 .study8 {
-  background-image: url("./images/clients/pandiamondpictures.png");
+  background-image: url("./images/clients/pandiamond-case.jpg");
 }
 
 body .middle .whoAmI {
