@@ -8,13 +8,12 @@
         facebookBgColor = '#3B5998';
         githubBgColor = '#5F2B80';
         vimeoBgColor = '#00B3EC';
-        clientBgColor = '#f1c40f';
         count = 0;
         textArray = [
             'Jo!',
             'MY NAME IS',
             'SIMON "KLINKE" KLINKERTZ',
-            'AND I AM',
+            'AND I AM A',
             'FILMMAKER AND WEB-DESIGNER'
         ];
         funcHoverLinkAndChangeBodyBg = function (classLink, bgColor) {
@@ -31,7 +30,6 @@
         funcHoverLinkAndChangeBodyBg('a.facebook', facebookBgColor);
         funcHoverLinkAndChangeBodyBg('a.github', githubBgColor);
         funcHoverLinkAndChangeBodyBg('a.vimeo', vimeoBgColor);
-        funcHoverLinkAndChangeBodyBg('a.client', clientBgColor);
         return $('.clickme').click(function () {
             $('.whoAmI').text(textArray[count]);
             count++;
